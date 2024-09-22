@@ -1,5 +1,10 @@
 import socket
 import pyfiglet
+import socket
+
+Host = socket.gethostname()
+
+IP = socket.gethostbyname(Host)
 
 Text = "SCANNER"
 result = pyfiglet.figlet_format(Text,font='small')
@@ -7,15 +12,15 @@ print(f"""
 -----------------------------------
 {result}
 
-Version. 0.2
+Version. 0.3
 Hecho por el Tortas
 ------------------------------------
 """)
-
+O = input("Su usted no sabe su ip es esta:", IP) 
 N = int(input("DESDE QUE PUERTO QUIERE ESCANEAR:"))
 
 puerto = range(N)
-I = input("INGRESE LA IP:")
+I = input("INGRESE SU IP PARA ESCANEAR LOS PUERTOS:")
 
 Host = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 
