@@ -16,7 +16,7 @@ Version. 0.3
 Hecho por el Tortas
 ------------------------------------
 """)
-print("Su usted no sabe su ip es esta:", IP)
+print("Si usted no sabe su ip es esta:", IP)
 
 N = int(input("DESDE QUE PUERTO QUIERE ESCANEAR:"))
 
