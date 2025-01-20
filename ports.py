@@ -2,9 +2,6 @@ import socket
 import pyfiglet
 import socket
 
-User = socket.gethostname()
-
-IP = socket.gethostbyname(User)
 
 Text = "SCANNER"
 result = pyfiglet.figlet_format(Text,font='small')
@@ -16,7 +13,6 @@ Version. 0.3
 Hecho por el Tortas
 ------------------------------------
 """)
-print("Si usted no sabe su ip es esta:", IP)
 
 N = int(input("DESDE QUE PUERTO QUIERE ESCANEAR:"))
 
